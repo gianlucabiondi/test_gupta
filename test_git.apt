@@ -221,7 +221,7 @@
 .head 2 -  Class DLL Name:
 .head 2 -  Title:
 .head 2 -  Icon File:
-.head 2 -  Accessories Enabled? No
+.head 2 -  Accessories Enabled? Yes
 .head 2 -  Visible? Yes
 .head 2 -  Display Settings
 .head 3 -  Display Style? Default
