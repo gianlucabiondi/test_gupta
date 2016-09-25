@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+
 <web-app 
    xmlns="http://java.sun.com/xml/ns/javaee" 
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
    version="2.5">
+
+  <context-param>
+    <description>Log4j Properties File</description>
+    <param-name>log4jConfigFileName</param-name>
+    <param-value>C:\EclipseWS\AppServer\src\main\resources\log.properties</param-value>
+  </context-param>
 
   <servlet>
     <servlet-name>Hello</servlet-name>
@@ -74,6 +81,7 @@
     <servlet-name>UserGet</servlet-name>
     <url-pattern>/user/get/*</url-pattern>
   </servlet-mapping>
+
   <servlet>
     <servlet-name>UserCreate</servlet-name>
     <servlet-class>com.turingsense.UserCreateServlet</servlet-class>
@@ -82,6 +90,7 @@
     <servlet-name>UserCreate</servlet-name>
     <url-pattern>/user/create/*</url-pattern>
   </servlet-mapping>
+  
    <servlet>
     <servlet-name>UserAuthentication</servlet-name>
     <servlet-class>com.turingsense.UserAuthenticationServlet</servlet-class>
@@ -90,6 +99,7 @@
     <servlet-name>UserAuthentication</servlet-name>
     <url-pattern>/user/authentication/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>UserConfirm</servlet-name>
     <servlet-class>com.turingsense.UserConfirmServlet</servlet-class>
@@ -98,6 +108,7 @@
     <servlet-name>UserConfirm</servlet-name>
     <url-pattern>/user/confirm/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>UserRefreshConfirm</servlet-name>
     <servlet-class>com.turingsense.UserRefreshConfirmServlet</servlet-class>
@@ -106,6 +117,7 @@
     <servlet-name>UserRefreshConfirm</servlet-name>
     <url-pattern>/user/refreshconfirm/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>UserSearch</servlet-name>
     <servlet-class>com.turingsense.UserSearchServlet</servlet-class>
@@ -114,6 +126,7 @@
     <servlet-name>UserSearch</servlet-name>
     <url-pattern>/user/search/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>UserUpdate</servlet-name>
     <servlet-class>com.turingsense.UserUpdateServlet</servlet-class>
@@ -122,6 +135,7 @@
     <servlet-name>UserUpdate</servlet-name>
     <url-pattern>/user/update/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>DeviceGet</servlet-name>
     <servlet-class>com.turingsense.DeviceGetServlet</servlet-class>
@@ -130,6 +144,7 @@
     <servlet-name>DeviceGet</servlet-name>
     <url-pattern>/device/get/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>DeviceVerification</servlet-name>
     <servlet-class>com.turingsense.DeviceVerificationServlet</servlet-class>
@@ -138,6 +153,7 @@
     <servlet-name>DeviceVerification</servlet-name>
     <url-pattern>/device/verification/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>DeviceDeactivate</servlet-name>
     <servlet-class>com.turingsense.DeviceDeactivateServlet</servlet-class>
@@ -146,6 +162,7 @@
     <servlet-name>DeviceDeactivate</servlet-name>
     <url-pattern>/device/deactivate/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>DeviceActivate</servlet-name>
     <servlet-class>com.turingsense.DeviceActivateServlet</servlet-class>
@@ -154,6 +171,7 @@
     <servlet-name>DeviceActivate</servlet-name>
     <url-pattern>/device/activate/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>DeviceCreate</servlet-name>
     <servlet-class>com.turingsense.DeviceCreateServlet</servlet-class>
@@ -162,6 +180,7 @@
     <servlet-name>DeviceCreate</servlet-name>
     <url-pattern>/device/create/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>DeviceSearch</servlet-name>
     <servlet-class>com.turingsense.DeviceSearchServlet</servlet-class>
@@ -170,6 +189,7 @@
     <servlet-name>DeviceSearch</servlet-name>
     <url-pattern>/device/search/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>DeviceUpdate</servlet-name>
     <servlet-class>com.turingsense.DeviceUpdateServlet</servlet-class>
@@ -178,6 +198,7 @@
     <servlet-name>DeviceUpdate</servlet-name>
     <url-pattern>/device/update/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>MiscdataCreate</servlet-name>
     <servlet-class>com.turingsense.MiscdataCreateServlet</servlet-class>
@@ -218,6 +239,7 @@
     <servlet-name>EventCreate</servlet-name>
     <url-pattern>/event/create/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>EventGet</servlet-name>
     <servlet-class>com.turingsense.EventGetServlet</servlet-class>
@@ -226,6 +248,7 @@
     <servlet-name>EventGet</servlet-name>
     <url-pattern>/event/get/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>EventSearch</servlet-name>
     <servlet-class>com.turingsense.EventSearchServlet</servlet-class>
@@ -234,6 +257,7 @@
     <servlet-name>EventSearch</servlet-name>
     <url-pattern>/event/search/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>EventUpdate</servlet-name>
     <servlet-class>com.turingsense.EventUpdateServlet</servlet-class>
@@ -242,6 +266,7 @@
     <servlet-name>EventUpdate</servlet-name>
     <url-pattern>/event/update/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>FeedbackCreate</servlet-name>
     <servlet-class>com.turingsense.FeedbackCreateServlet</servlet-class>
@@ -250,6 +275,7 @@
     <servlet-name>FeedbackCreate</servlet-name>
     <url-pattern>/feedback/create/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>FeedbackGet</servlet-name>
     <servlet-class>com.turingsense.FeedbackGetServlet</servlet-class>
@@ -258,6 +284,7 @@
     <servlet-name>FeedbackGet</servlet-name>
     <url-pattern>/feedback/get/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>FeedbackSearch</servlet-name>
     <servlet-class>com.turingsense.FeedbackSearchServlet</servlet-class>
@@ -266,6 +293,7 @@
     <servlet-name>FeedbackSearch</servlet-name>
     <url-pattern>/feedback/search/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>FeedbackUpdate</servlet-name>
     <servlet-class>com.turingsense.FeedbackUpdateServlet</servlet-class>
@@ -274,6 +302,7 @@
     <servlet-name>FeedbackUpdate</servlet-name>
     <url-pattern>/feedback/update/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>RecordingCreate</servlet-name>
     <servlet-class>com.turingsense.RecordingCreateServlet</servlet-class>
@@ -286,6 +315,7 @@
     <servlet-name>RecordingCreate</servlet-name>
     <url-pattern>/recording/create/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>StartRecording</servlet-name>
     <servlet-class>com.turingsense.StartRecordingServlet</servlet-class>
@@ -298,6 +328,7 @@
     <servlet-name>StartRecording</servlet-name>
     <url-pattern>/recording/start/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>StopRecording</servlet-name>
     <servlet-class>com.turingsense.StopRecordingServlet</servlet-class>
@@ -310,6 +341,7 @@
     <servlet-name>StopRecording</servlet-name>
     <url-pattern>/recording/stop/*</url-pattern>
   </servlet-mapping>
+  
    <servlet>
     <servlet-name>ResumeRecording</servlet-name>
     <servlet-class>com.turingsense.ResumeRecordingServlet</servlet-class>
@@ -318,6 +350,7 @@
     <servlet-name>ResumeRecording</servlet-name>
     <url-pattern>/recording/resume/*</url-pattern>
   </servlet-mapping>
+  
    <servlet>
     <servlet-name>CompleteRecording</servlet-name>
     <servlet-class>com.turingsense.CompleteRecordingServlet</servlet-class>
@@ -326,6 +359,7 @@
     <servlet-name>CompleteRecording</servlet-name>
     <url-pattern>/recording/complete/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>SendCalibrationData</servlet-name>
     <servlet-class>com.turingsense.SendCalibrationDataServlet</servlet-class>
@@ -334,6 +368,7 @@
     <servlet-name>SendCalibrationData</servlet-name>
     <url-pattern>/recording/calibrationdata/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>RecordingGet</servlet-name>
     <servlet-class>com.turingsense.RecordingGetServlet</servlet-class>
@@ -342,6 +377,7 @@
     <servlet-name>RecordingGet</servlet-name>
     <url-pattern>/recording/get/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>RecordingSearch</servlet-name>
     <servlet-class>com.turingsense.RecordingSearchServlet</servlet-class>
@@ -350,6 +386,7 @@
     <servlet-name>RecordingSearch</servlet-name>
     <url-pattern>/recording/search/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>RecordingUpdate</servlet-name>
     <servlet-class>com.turingsense.RecordingUpdateServlet</servlet-class>
@@ -358,6 +395,7 @@
     <servlet-name>RecordingUpdate</servlet-name>
     <url-pattern>/recording/update/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>PaymentCreate</servlet-name>
     <servlet-class>com.turingsense.PaymentCreateServlet</servlet-class>
@@ -366,6 +404,7 @@
     <servlet-name>PaymentCreate</servlet-name>
     <url-pattern>/payment/create/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>PaymentGet</servlet-name>
     <servlet-class>com.turingsense.PaymentGetServlet</servlet-class>
@@ -374,6 +413,7 @@
     <servlet-name>PaymentGet</servlet-name>
     <url-pattern>/payment/get/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>PaymentSearch</servlet-name>
     <servlet-class>com.turingsense.PaymentSearchServlet</servlet-class>
@@ -382,6 +422,7 @@
     <servlet-name>PaymentSearch</servlet-name>
     <url-pattern>/payment/search/*</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>PaymentUpdate</servlet-name>
     <servlet-class>com.turingsense.PaymentUpdateServlet</servlet-class>
@@ -390,7 +431,6 @@
     <servlet-name>PaymentUpdate</servlet-name>
     <url-pattern>/payment/update/*</url-pattern>
   </servlet-mapping>
-  
      
   <servlet>
     <servlet-name>PlayBackStart</servlet-name>
@@ -463,6 +503,11 @@
     <init-param>
         <param-name>appPropertyFile</param-name>
         <param-value>/home/tsadm/dev/app/src/main/webapp/WEB-INF/classes/app.properties</param-value>
+    </init-param>
+    <init-param>
+      <description>Log4j Properties File</description>
+      <param-name>log4jConfigFileName</param-name>
+      <param-value>/home/tsadm/dev/app/src/main/resources/log.properties</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>
@@ -590,7 +635,6 @@
     <url-pattern>/library/user/update/*</url-pattern>
   </servlet-mapping>
 
-
   <servlet>
     <servlet-name>SessionDataHistory</servlet-name>
     <servlet-class>com.turingsense.SessionDataHistoryServlet</servlet-class>
@@ -617,7 +661,70 @@
     <servlet-name>SessionDataUpdate</servlet-name>
     <url-pattern>/metadata/session/update/*</url-pattern>
   </servlet-mapping>
-    
+
+  <servlet>
+    <description>Returns all the available Motion Library the user has access to</description>
+    <display-name>MotionLibraryGetAvailableServlet</display-name>
+    <servlet-name>MotionLibraryGetAvailableServlet</servlet-name>
+    <servlet-class>com.turingsense.MotionLibraryGetAvailableServlet</servlet-class>
+    <init-param>
+      <description>APP file properties</description>
+      <param-name>appPropertyFile</param-name>
+      <param-value>/home/tsadm/dev/app/src/main/webapp/WEB-INF/classes/app.properties</param-value>
+    </init-param>
+    <init-param>
+      <description>Log4j Properties File</description>
+      <param-name>log4jConfigFileName</param-name>
+      <param-value>/home/tsadm/dev/app/src/main/resources/log.properties</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MotionLibraryGetAvailableServlet</servlet-name>
+    <url-pattern>/motionlibrary/getavailable</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>Gets the content of a motion library</description>
+    <display-name>MotionLibraryGet</display-name>
+    <servlet-name>MotionLibraryGet</servlet-name>
+    <servlet-class>com.turingsense.MotionLibraryGetServlet</servlet-class>
+    <init-param>
+      <description>APP file properties</description>
+      <param-name>appPropertyFile</param-name>
+      <param-value>/home/tsadm/dev/app/src/main/webapp/WEB-INF/classes/app.properties</param-value>
+    </init-param>
+    <init-param>
+      <description>Log4j Properties File</description>
+      <param-name>log4jConfigFileName</param-name>
+      <param-value>/home/tsadm/dev/app/src/main/resources/log.properties</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MotionLibraryGet</servlet-name>
+    <url-pattern>/motionlibrary/get</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>Puts the content of a motion library</description>
+    <display-name>MotionLibraryPut</display-name>
+    <servlet-name>MotionLibraryPut</servlet-name>
+    <servlet-class>com.turingsense.MotionLibraryPutServlet</servlet-class>
+    <init-param>
+      <description>APP file properties</description>
+      <param-name>appPropertyFile</param-name>
+      <param-value>/home/tsadm/dev/app/src/main/webapp/WEB-INF/classes/app.properties</param-value>
+    </init-param>
+    <init-param>
+      <description>Log4j Properties File</description>
+      <param-name>log4jConfigFileName</param-name>
+      <param-value>/home/tsadm/dev/app/src/main/resources/log.properties</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MotionLibraryPut</servlet-name>
+    <url-pattern>/motionlibrary/put</url-pattern>
+  </servlet-mapping>
+
   <listener>
     <listener-class>org.example.ExecutorContextListener</listener-class>
   </listener>
