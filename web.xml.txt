@@ -179,6 +179,38 @@
     <url-pattern>/device/update/*</url-pattern>
   </servlet-mapping>
   <servlet>
+    <servlet-name>MiscdataCreate</servlet-name>
+    <servlet-class>com.turingsense.MiscdataCreateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MiscdataCreate</servlet-name>
+    <url-pattern>/miscdata/create/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MiscdataGet</servlet-name>
+    <servlet-class>com.turingsense.MiscdataGetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MiscdataGet</servlet-name>
+    <url-pattern>/miscdata/get/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MiscdataSearch</servlet-name>
+    <servlet-class>com.turingsense.MiscdataSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MiscdataSearch</servlet-name>
+    <url-pattern>/miscdata/search/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MiscdataUpdate</servlet-name>
+    <servlet-class>com.turingsense.MiscdataUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MiscdataUpdate</servlet-name>
+    <url-pattern>/miscdata/update/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>EventCreate</servlet-name>
     <servlet-class>com.turingsense.EventCreateServlet</servlet-class>
   </servlet>
